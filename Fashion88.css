@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+   margin:0px;
+  padding:0px;
+}
+
+body {
+  font-family: gothamhtf;
+ 
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(gothamhtf-bold-webfont.ttf);
+}
+
+.header {
+  background-image: url("images/Fashion88_top_banner.jpeg"); 
+  background-color: #cccccc; 
+  width:100%;
+  min-height:600px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.nav_wrapper{
+	
+	margin:auto;
+	padding:100px 50px 50px 50px;
+	
+}
+.menu_item{
+	
+ list-style-type: none;
+ padding-top: 8px;
+}
+.top_menu_item{
+	
+ list-style-type: none;
+ padding-top: 20px;
+}
+.menu_item_link{
+	
+	text-decoration: none;
+	color:#000000;
+}
+.top_menu_item_link{
+	text-decoration: none;
+	color:#ffffff;
+}
+.image_wrapper{
+ display:flex;
+ 
+}
+.image_wrapper_left{
+  width:50%;
+  min-height:500px; 
+  color:#FFFFFF;
+  background-image: url("images/image1.jpg"); 
+  min-height:600px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.image_wrapper_right{
+  width:50%;
+  min-height:500px; 
+  color:#FFFFFF;
+  background-image: url("images/image2.jpg"); 
+  min-height:600px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.text_wrapper{
+ text-align:center;
+ padding:20px;
+  
+}
+
+.image_styling{
+ width:100%;	
+}
+
+.insta_images_wrapper{
+display:flex;	
+}
+.insta_image{
+ width:20%;
+}
+.footer_wrapper{
+width:100%;
+min-height:300px;
+padding:50px; 
+display:flex;
+	
+}
+.social_icon{
+display:flex;
+width: 100%;
+padding: 12px;	
+list-style-type: none;
+}
+.social_item{
+ padding:10px;
+}
+
+/*---------------------------------------------*/
+
+form.sub_form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #000000;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+form.sub_form button {
+  float: left;
+  width: 14%;
+  padding: 10px;
+  background: #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  font-size: 17px;
+  margin-left:2px;
+  cursor: pointer; 
+}
+
+
+.footer_bottom{
+	text-align:center;
+	color:#000000;
+	font-size:12px;
+	padding:8px;
+}
+
+/*---------------------------------------------*/
+
+.footer_column_left{
+ width:80%;
+ height:200px;
+ color:#000000;
+ text-align:left;
+}
+.footer_column_right{
+ width:20%;
+ height:200px;
+color:#000000;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 728px) {
+	  .image_wrapper{
+	 display:flex;
+	 flex-direction: column;
+	}
+	.image_wrapper_left{
+	 width:100%;
+	}
+	.image_wrapper_right{
+	 width:100%;
+	}
+
+	.footer_column_left{
+	 width:100%;
+	 
+	 text-align:left;
+	}
+	.footer_column_right{
+	 width:100%;
+
+	}
+	.footer_wrapper{ 
+	 flex-direction: column;	
+	}
+}
